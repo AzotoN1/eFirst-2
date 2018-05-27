@@ -161,7 +161,7 @@ header {
 }
 
 .bet .games-counter {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .bet .games-counter span {
@@ -175,7 +175,7 @@ header {
     position: relative;
     background: #032c42;
     margin-right: 5px;
-    padding: 0px 4px;
+    padding: 0px 8px;
     font-size: 3em;
     color: $white;
     font-weight: bold;
@@ -191,12 +191,12 @@ header {
 }
 
 .bet .bet-content {
-    margin-left: 180px;
+    margin-left: 135px;
 
 }
 
 .bet .bet-content h2 {
-    font-size: 4em;
+    font-size: 4.5em;
     font-weight: bold;
     color: $white;
     text-shadow: 3px 3px black;
@@ -236,11 +236,11 @@ header {
             font-weight: bold;
         }
         .columns {
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .rules-content {
             width: 60%;
-            padding: 20px;
+            padding: 20px 30px;
             ul {
                 list-style: none;
                 li {
