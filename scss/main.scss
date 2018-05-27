@@ -12,6 +12,7 @@ body {
     background-image: url(../img/bacgkround.jpg);
     font-size: 10px;
     font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -34,35 +35,36 @@ $orange-d: rgba(239, 160, 34, 1);
 //
 //Triangle and light Styles
 //
+.bg-elements {}
+
 .triangle-top {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -150px;
+    left: -100px;
     width: 70%;
     height: 200px;
     background: rgba(255, 200, 20, 1);
-    background: linear-gradient(175deg, rgba(255, 200, 20, 1) 0%,
-    rgba(254, 203, 37, 1) 20%,
-    rgba(255, 178, 36, 1) 20%,
-    rgba(239, 160, 34, 1) 100%);
-    box-shadow: -195px -145px 5px 0px rgba(255, 0, 255, 1);
-    clip-path: polygon(0 0, 0 48%, 78% 0);
+    background: linear-gradient(180deg, rgba(255, 178, 36, 1) 0%,
+    rgba(239, 160, 34, 1) 20%,
+    rgba(255, 200, 20, 1) 20%,
+    rgba(254, 173, 17, 1) 100%);
+    transform: rotate(170deg);
 }
 
 .triangle-bottom {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -150px;
+    right: -100px;
     width: 80%;
     height: 200px;
     background: rgba(255, 215, 56, 1);
-    background: linear-gradient(175deg,
-    rgba(255, 219, 100, 1) 0%,
-    rgba(255, 212, 148, 1) 72%,
-    rgba(255, 200, 20, 1) 72%,
-    rgba(235, 141, 18, 1) 100%);
+    background: linear-gradient(180deg,
+    rgba(255, 200, 20, 1) 60%,
+    rgba(235, 141, 18, 1) 92%,
+    rgba(255, 219, 100, 1) 92%,
+    rgba(255, 212, 148, 1) 70%);
     box-shadow: inset 0px 18px 0px -4px rgba(255, 255, 255, 0.32);
-    clip-path: polygon(100% 100%, 100% 46%, 18% 100%);
+    transform: rotate(170deg); //    clip-path: polygon(100% 100%, 100% 46%, 18% 100%);
     filter: drop-shadow(inset 0px 18px 0px -4px rgba(255, 255, 255, 0.32));
 }
 
@@ -226,10 +228,10 @@ header {
             position: absolute;
             top: 0;
             left: 0;
-            padding: 10px;
-            color: rgba(0, 0, 0, .8);
+            padding: 10px 25px;
+            color: rgba(0, 0, 0, .9);
             background: $orange-l;
-            font-size: 1.8em;
+            font-size: 1.5em;
             text-transform: uppercase;
             font-weight: bold;
         }
